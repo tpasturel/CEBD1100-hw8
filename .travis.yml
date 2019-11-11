@@ -8,7 +8,7 @@ python:
 
 before_install:
  - pip install matplotlib
- - pip3 install maltplotlib
+ - pip3 install matplotlib
 
 script:
  - python CEBD1100_Homework8_ThibaultPasturel.py -H
