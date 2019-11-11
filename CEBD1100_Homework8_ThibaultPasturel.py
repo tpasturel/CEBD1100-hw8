@@ -11,7 +11,6 @@ def check_column_names(df, headers=False, column1=False, column2=False):
     # Providing wine.data's headers in alphabetical order   
     if headers:
         headers = np.sort(df.columns.values)
-        print(headers)
         print("======== Here are wine.data's headers ======== \n" + str('\n'.join(headers)))
         exit()
 
@@ -59,10 +58,14 @@ def plot_data(df, column1=False, column2=False):
     # My bulky way of scattering the three sets of data in one frame
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
-    ax1.scatter(xgrape1, ygrape1, c='r', label="Grapetype " + str(list(grapetypes)[0]))
-    ax1.scatter(xgrape2, ygrape2, c='g', label="Grapetype " + str(list(grapetypes)[1]))
-    ax1.scatter(xgrape3, ygrape3, c='b', label="Grapetype " + str(list(grapetypes)[2]))
-    plt.legend(loc='upper right')
+    ax1.scatter(xgrape1, ygrape1, c='r', marker='o', label="Grapetype " + str(list(grapetypes)[0]))
+    ax1.scatter(xgrape2, ygrape2, c='g', marker='v', label="Grapetype " + str(list(grapetypes)[1]))
+    ax1.scatter(xgrape3, ygrape3, c='b', marker=',', label="Grapetype " + str(list(grapetypes)[2]))
+    plt.xlabel('x-axis: ' + str(column1), fontsize=9)
+    plt.ylabel('y-axis: ' + str(column2), fontsize=9)
+    plt.legend(loc='upper right', fontsize=8)
+    ax1.set_title('Correlation analysis between ' + str(column1) + ' and ' + str(column2) 
+    + '\n attributes from sklearn wine dataset \n', fontsize=9, fontweight='bold')
     plt.show()
     plt.savefig("./" + column1 + "_" + column2 + ".png")
 
