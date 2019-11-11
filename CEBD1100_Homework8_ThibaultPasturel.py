@@ -62,13 +62,13 @@ def plot_data(df, column1=False, column2=False):
     ax1.scatter(xgrape2, ygrape2, c='g', label="Grapetype " + str(list(grapetypes)[1]))
     ax1.scatter(xgrape3, ygrape3, c='b', label="Grapetype " + str(list(grapetypes)[2]))
     plt.legend(loc='upper right')
-    #plt.show()
+    plt.show()
     plt.savefig("./" + column1 + "_" + column2 + ".png")
 
     ## I could not get the for loop working with plotting in a single frame :(
     # for grapetype in grapetypes:
-    #     x = df[df['GrapeType']==grapetype][column1].values
-    #     y = df[df['GrapeType']==grapetype][column2].values
+    #     x = df[loc['target']==list(grapetypes)[0], column1]
+    #     y = df[loc['target']==list(grapetypes)[1], column2]
     #     fig = plt.figure()
     #     ax1 = fig.add_subplot(111)
     #     ax1.scatter(x, y)
