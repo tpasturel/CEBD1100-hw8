@@ -1,6 +1,7 @@
 language: python
 
 python:
+ - 2.7
  - 3.6
  - 3.5
  - 3.7
@@ -13,4 +14,3 @@ script:
  - python CEBD1100_Homework8_ThibaultPasturel.py -c1 hue -c2 malic_acid
  - python CEBD1100_Homework8_ThibaultPasturel.py -c1 proline -c2 malic_acid
  - python CEBD1100_Homework8_ThibaultPasturel.py -c1 color_intensity -c2 malic_acid
- 
