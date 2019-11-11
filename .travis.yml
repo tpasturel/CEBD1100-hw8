@@ -7,9 +7,7 @@ python:
 
 script:
  - python CEBD1100_Homework8_ThibaultPasturel.py -H
- - python CEBD1100_Homework8_ThibaultPasturel.py -c1 alcohol -c2 malic_acid
- - python CEBD1100_Homework8_ThibaultPasturel.py -c1 ash -c2 malic_acid
- - python CEBD1100_Homework8_ThibaultPasturel.py -c1 magnesium -c2 malic_acid
- - python CEBD1100_Homework8_ThibaultPasturel.py -c1 hue -c2 malic_acid
- - python CEBD1100_Homework8_ThibaultPasturel.py -c1 proline -c2 malic_acid
- - python CEBD1100_Homework8_ThibaultPasturel.py -c1 color_intensity -c2 malic_acid
+ - python CEBD1100_Homework8_ThibaultPasturel.py -c1 alcohol -c2 color_intensity
+ - python CEBD1100_Homework8_ThibaultPasturel.py -c1 proanthocyanins -c2 color_intensity
+ - python CEBD1100_Homework8_ThibaultPasturel.py -c1 malic_acid -c2 alcohol
+ - python CEBD1100_Homework8_ThibaultPasturel.py -c1 malic_acid -c2 color_intensity

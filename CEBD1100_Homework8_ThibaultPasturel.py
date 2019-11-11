@@ -66,8 +66,8 @@ def plot_data(df, column1=False, column2=False):
     plt.legend(loc='upper right', fontsize=8)
     ax1.set_title('Correlation analysis between ' + str(column1) + ' and ' + str(column2) 
     + '\n attributes from sklearn wine dataset \n', fontsize=9, fontweight='bold')
-    plt.show()
     plt.savefig("./" + column1 + "_" + column2 + ".png")
+    plt.show()
 
     ## I could not get the for loop working with plotting in a single frame :(
     # for grapetype in grapetypes:
