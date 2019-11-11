@@ -8,9 +8,10 @@ import re
 import pandas as pd
 
 def check_column_names(df, headers=False, column1=False, column2=False):
-    # Providing wine.data's headers
+    # Providing wine.data's headers in alphabetical order   
     if headers:
-        headers = df.columns.values
+        headers = np.sort(df.columns.values)
+        print(headers)
         print("======== Here are wine.data's headers ======== \n" + str('\n'.join(headers)))
         exit()
 
